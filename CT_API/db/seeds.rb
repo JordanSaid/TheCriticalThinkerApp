@@ -29,7 +29,8 @@ fc1 = user_one.fact_checks.create({
 
 a2 = user_two.articles.create({
   title: "BLM Toronto, Justin Trudeau is a white supremacist",
-  url: "https://www.youtube.com/watch?v=xHbSbtzPXtU"
+  url: "https://www.youtube.com/watch?v=xHbSbtzPXtU",
+  embeded: "https://www.youtube.com/embed/xHbSbtzPXtU"
   })
 
 fc2 = user_two.fact_checks.create({
