@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, browserHistory } from 'react-router'
-import Article from './Article'
+import ArticleListing from './ArticleListing'
 
 class Articles extends React.Component {
 
@@ -40,7 +40,7 @@ class Articles extends React.Component {
 
   render(){
     return(
-      <div className="article">
+      <div className="articles-list">
         <nav>
           <Link to='/' className='title'>The Critical Thinker</Link>
           <input className='search-box' type='text' placeholder='Search Title...' value={this.state.searchQuery} onChange={this.doSearch} />
@@ -51,7 +51,7 @@ class Articles extends React.Component {
           {
             this.state.articles.filter((article) => `${article.title}`.toUpperCase().indexOf(this.state.searchQuery.toUpperCase()) >= 0)
              .map((article) => (
-              <Article { ...article } key={article.url}/>
+              <ArticleListing { ...article } key={article.url}/>
             ))
           }
         </div>
