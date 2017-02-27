@@ -25,7 +25,7 @@ class Articles extends React.Component {
        if(request.status === 200){
         console.log("request: ", request.responseText)
         var data = JSON.parse(request.responseText)
-        this.setState( { shows: data } )
+        this.setState( { articles: data } )
        } else{
         console.log("Uh oh you're not logged in!")
         browserHistory.goBack()
@@ -43,8 +43,9 @@ class Articles extends React.Component {
       <div className="article">
         <nav>
           <Link to='/' className='title'>The Critical Thinker</Link>
-          <input className='search-box' type='text' placeholder='Search...' value={this.state.searchQuery} onChange={this.doSearch} />
+          <input className='search-box' type='text' placeholder='Search Title...' value={this.state.searchQuery} onChange={this.doSearch} />
         </nav>
+    
 
         <div className='articles-container'>
           {
@@ -52,7 +53,6 @@ class Articles extends React.Component {
              .map((article) => (
               <Article { ...article } key={article.url}/>
             ))
-
           }
         </div>
       
