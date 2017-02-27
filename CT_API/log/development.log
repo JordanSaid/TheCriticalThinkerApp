@@ -2295,3 +2295,98 @@ Processing by ArticlesController#index as JSON
 Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.9ms)
 
 
+Started GET "/api/articles" for ::1 at 2017-02-27 17:18:16 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users.json" for ::1 at 2017-02-27 17:22:25 +0000
+Processing by UsersController#index as JSON
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 20ms (Views: 5.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-02-27 17:22:27 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 11ms (Views: 0.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-02-27 17:25:26 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mArticle Load (2.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-02-27 17:29:45 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-02-27 17:30:11 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 30ms (Views: 0.2ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-02-27 17:30:21 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 15ms (Views: 2.8ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-02-27 17:30:37 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-02-27 17:30:57 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-02-27 17:31:09 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 9ms (Views: 1.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-02-27 17:31:32 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-02-27 17:31:48 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
