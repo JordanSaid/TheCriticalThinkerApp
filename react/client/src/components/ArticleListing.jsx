@@ -16,14 +16,15 @@ const ArticleListing = function (props) {
         <div className='article-listing-details'>
           <h3 className='article-listing-title'>{props.title}</h3>
           <iframe className='article-listing-iframe'src={link} scrolling="yes" width="500" height="500"></iframe>
-          <p className='article-listing-url'><a href={props.url}>link</a></p>
+          <p className='article-listing-url'><a href={props.url}>Go To Link </a>
           <Link to={
             {
               "pathname": "/article",
               "query": {"article_id": props.id},
               "state": "info"
             }
-          }>To Page</Link>
+          }> Fact Checks</Link> 
+          </p>
         </div>
       </div>
   )

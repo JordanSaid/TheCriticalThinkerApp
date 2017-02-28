@@ -20,6 +20,29 @@ class ArticlesController < ApplicationController
       })
   end
 
+  def update
+    article = Article.find(params[:id])
+
+    if article.destroy!
+      render({json: {status: :success}})
+    else
+      render({json: {status: :delete_failed}})
+    end
+
+  end
+
+  def destroy
+    article = Article.find(params[:id])
+
+    if article.destroy!
+      render({json: {status: :success}})
+    else
+      render({json: {status: :delete_failed}})
+    end
+
+  end
+
+
   private
   def article_params
     params.require(:article).permit([:url, :title, :embeded])

@@ -20,6 +20,28 @@ class FactChecksController < ApplicationController
       })
   end
 
+  def update
+    factCheck = FactCheck.find(params[:id])
+
+    if factCheck.update_attributes(factCheck_params)
+      render({json: factCheck})
+    else
+      render({json: :update_failed})
+    end
+
+  end
+
+  def destroy
+    factCheck = FactCheck.find(params[:id])
+
+    if factCheck.destroy!
+      render({json: {status: :success}})
+    else
+      render({json: {status: :delete_failed}})
+    end
+
+  end
+
   private
   def factCheck_params
     params.require(:factCheck).permit([:category, :claim, :evidence, :sources])

@@ -5068,3 +5068,123 @@ Processing by ArticlesController#show as JSON
 Completed 200 OK in 11ms (Views: 0.9ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/api/articles" for ::1 at 2017-02-28 16:57:56 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 30ms (Views: 1.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users.json" for ::1 at 2017-02-28 16:58:08 +0000
+Processing by UsersController#index as JSON
+  Parameters: {"user"=>{}}
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-02-28 16:58:13 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/articles/20" for ::1 at 2017-02-28 16:58:19 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"20", "article"=>{}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.1ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 20]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+Completed 200 OK in 17ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-02-28 17:00:58 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (2.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 29ms (Views: 1.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-02-28 17:03:58 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (4.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 34ms (Views: 1.7ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-02-28 17:04:41 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-02-28 17:05:00 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 27ms (Views: 4.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-02-28 17:05:37 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 6ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/articles/21" for ::1 at 2017-02-28 17:05:44 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"21", "article"=>{}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.4ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 21]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+Completed 200 OK in 36ms (Views: 1.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-02-28 17:06:07 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-02-28 17:06:33 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 69ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-02-28 17:06:50 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-02-28 17:07:06 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-02-28 17:07:14 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 25ms (Views: 3.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/articles/20" for ::1 at 2017-02-28 17:07:21 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"20", "article"=>{}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.1ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 20]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+Completed 200 OK in 23ms (Views: 2.0ms | ActiveRecord: 0.6ms)
+
+
