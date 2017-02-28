@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, browserHistory } from 'react-router'
 import FactCheckListing from './FactCheckListing'
+import ArticleListing from './ArticleListing'
 
 class Article extends React.Component {
 
@@ -25,10 +26,10 @@ class Article extends React.Component {
             console.log("request: ", request.responseText)
             var data = JSON.parse(request.responseText)
             console.log(data)
-            var articleData = {title: data.title, url: data.url, id:data.id, embeded: data.embeded}
+            var articleData = {title: data.title, url: data.url, id:data.id, embeded: data.embeded, person: data.user_id}
             var factCheckData = data.fact_checks
-            console.log(factCheckData)
-            this.setState( { article: articleData, factChecks: factCheckData } )
+            this.setState( { article: articleData});
+            this.setState({ factChecks: factCheckData });
            } else{
             console.log("Uh oh you're not logged in!")
             browserHistory.goBack()
@@ -38,8 +39,14 @@ class Article extends React.Component {
   }
 
   render(){
+    if (!this.state.article) {
+      return (
+        <p>Loading</p>
+        )
+    }
     return(
       <div className='article-container'>
+      <ArticleListing {...this.state.article}key={this.state.article.id}/>
       <div className='fact-checks-list'>
         { this.state.factChecks.map((factCheck) => (
         <FactCheckListing { ...factCheck } key={factCheck.id}/>
