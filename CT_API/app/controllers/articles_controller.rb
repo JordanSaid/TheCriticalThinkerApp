@@ -15,7 +15,8 @@ class ArticlesController < ApplicationController
     article = Article.find(params[:id])
     render :json => article.as_json({
       include:
-      [:user, :fact_checks]
+      [:user, 
+        fact_checks: {include: :user}]
       })
   end
 

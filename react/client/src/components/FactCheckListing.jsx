@@ -9,6 +9,7 @@ const FactCheckListing = function (props) {
           <p className='fact-check-listing-claim'>Claim: {props.claim}</p>
           <p className='fact-check-listing-evidence'>Evidence: {props.evidence}</p>
           <p className='fact-check-listing-sources'>Source: {props.sources}</p>
+          <p className='fact-check-listing-user'>User: {props.user.email}</p>
         </div>
       </div>
   )

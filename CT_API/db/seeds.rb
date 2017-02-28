@@ -21,7 +21,7 @@ a1 = user_one.articles.create({
 
 fc1 = user_one.fact_checks.create({
   category: "false",
-  claim: "The below picture shows the shop in china that sells human bodies as meat.",
+  claim: "The picture shows the shop in china that sells human bodies as meat.",
   evidence: "These photographs come from a number of sources, but at least one of them was taken from a 2012 marketing stunt for the video game Resident Evil 6, in which a butcher shop selling fake “human meat” was set up at London’s Smithfield Market",
   sources: "http://kotaku.com/5947404/resident-evil-6-meat-stunt-might-make-you-lose-your-lunch",
   article:a1
