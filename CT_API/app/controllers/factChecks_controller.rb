@@ -11,9 +11,17 @@ class FactChecksController < ApplicationController
     render json: factCheck, status: :created
   end
 
+  def show
+    factCheck = FactCheck.find(params[:id])
+    render :json => factCheck.as_json({
+      include:
+      {user: { only: :email}}
+      })
+  end
+
   private
   def factCheck_params
-    params.require(:factCheck).permit([:type, :claim, :evidence, :sources])
+    params.require(:factCheck).permit([:category, :claim, :evidence, :sources])
   end
 
 end

@@ -2390,3 +2390,35 @@ Processing by ArticlesController#index as JSON
 Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/api/articles" for ::1 at 2017-02-27 17:44:04 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 26ms (Views: 1.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users.json" for ::1 at 2017-02-27 17:46:15 +0000
+Processing by UsersController#index as JSON
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 15ms (Views: 6.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-02-28 09:57:47 +0000
+DEPRECATION WARNING: skip_before_filter is deprecated and will be removed in Rails 5.1. Use skip_before_action instead. (called from <class:ApplicationController> at /Users/user/Desktop/cx3_8/CT/CT_API/app/controllers/application_controller.rb:3)
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 31ms (Views: 0.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-02-28 09:58:49 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 25ms (Views: 1.2ms | ActiveRecord: 1.3ms)
+
+

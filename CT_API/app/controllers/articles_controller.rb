@@ -11,9 +11,17 @@ class ArticlesController < ApplicationController
     render json: article, status: :created
   end
 
+  def show
+    article = Article.find(params[:id])
+    render :json => article.as_json({
+      include:
+      {user: { only: :email}}
+      })
+  end
+
   private
   def article_params
-    params.require(:article).permit([:url])
+    params.require(:article).permit([:url, :title, :embeded])
   end
 
 end
