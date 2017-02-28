@@ -16,7 +16,7 @@ class FactChecksController < ApplicationController
     factCheck = FactCheck.find(params[:id])
     render :json => factCheck.as_json({
       include:
-      {user: { only: :email}}
+      [:user]
       })
   end
 

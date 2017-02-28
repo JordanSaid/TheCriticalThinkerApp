@@ -18,9 +18,5 @@ const FactCheckListing = function (props) {
 
 const { string, text } = React.PropTypes
 
-ArticleListing.propTypes = {
-  title: string.isRequired,
-  url: string.isRequired,
-}
 
-export default ArticleListing
+export default FactCheckListing

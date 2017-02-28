@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, browserHistory } from 'react-router'
 
 const ArticleListing = function (props) {
   var link = null;
@@ -8,7 +9,7 @@ const ArticleListing = function (props) {
     else {
     link = props.url
     }
-    console.log(props)
+    console.log(props.id)
 
     return (
       <div className='article-listing'>
@@ -16,6 +17,13 @@ const ArticleListing = function (props) {
           <h3 className='article-listing-title'>{props.title}</h3>
           <iframe className='article-listing-iframe'src={link} scrolling="yes" width="500" height="500"></iframe>
           <p className='article-listing-url'><a href={props.url}>link</a></p>
+          <Link to={
+            {
+              "pathname": "/article",
+              "query": {"article_id": props.id},
+              "state": "info"
+            }
+          }>To Page</Link>
         </div>
       </div>
   )
