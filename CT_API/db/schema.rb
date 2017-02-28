@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170227161552) do
+ActiveRecord::Schema.define(version: 20170228100953) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "url"
@@ -27,10 +27,10 @@ ActiveRecord::Schema.define(version: 20170227161552) do
     t.text     "evidence"
     t.text     "sources"
     t.integer  "user_id"
-    t.integer  "article_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string   "category"
+    t.integer  "article_id"
     t.index ["article_id"], name: "index_fact_checks_on_article_id"
     t.index ["user_id"], name: "index_fact_checks_on_user_id"
   end
