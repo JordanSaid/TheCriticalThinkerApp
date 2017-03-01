@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, browserHistory } from 'react-router'
 import ArticleListing from './ArticleListing'
+import ArticleForm from './ArticleForm'
 
 class Articles extends React.Component {
 
@@ -45,8 +46,9 @@ class Articles extends React.Component {
           <Link to='/' className='title'>The Critical Thinker</Link>
           <input className='search-box' type='text' placeholder='Search Title...' value={this.state.searchQuery} onChange={this.doSearch} />
         </nav>
-    
-
+        <div>
+        <ArticleForm {...this.state.article}/>
+        </div>
         <div className='articles-container'>
           {
             this.state.articles.filter((article) => `${article.title}`.toUpperCase().indexOf(this.state.searchQuery.toUpperCase()) >= 0)

@@ -7,7 +7,9 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    article = Article.create( article_params )
+    article = article_params
+    article[:user_id] = current_user.id
+    Article.create(article)
     render json: article, status: :created
   end
 

@@ -40,7 +40,7 @@ class FactChecks extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState){
-
+    
   }
 
   render(){
