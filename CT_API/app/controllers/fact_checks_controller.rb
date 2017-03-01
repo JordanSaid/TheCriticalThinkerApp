@@ -8,8 +8,10 @@ class FactChecksController < ApplicationController
   end
 
   def create
-    factCheck = FactCheck.create( factCheck_params )
-    render json: factCheck, status: :created
+    factCheck = factCheck_params
+    factCheck[:user_id] = current_user.id
+    FactCheck.create(factCheck)
+    render json: factCheck.as_json, status: :created
   end
 
   def show
@@ -44,7 +46,7 @@ class FactChecksController < ApplicationController
 
   private
   def factCheck_params
-    params.require(:factCheck).permit([:category, :claim, :evidence, :sources])
+    params.require(:fact_check).permit([:category, :claim, :evidence, :sources, :article_id])
   end
 
 end

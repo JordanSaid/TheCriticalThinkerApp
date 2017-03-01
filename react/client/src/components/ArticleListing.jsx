@@ -19,7 +19,7 @@ const ArticleListing = function (props) {
           <p className='article-listing-url'><a href={props.url}>Go To Link </a>
           <Link to={
             {
-              "pathname": "/article",
+              "pathname": "/factChecks",
               "query": {"article_id": props.id},
               "state": "info"
             }
