@@ -3,6 +3,7 @@ import { Link, browserHistory } from 'react-router'
 import FactCheckListing from './FactCheckListing'
 import ArticleListing from './ArticleListing'
 import FactCheckForm from './FactCheckForm'
+import Collapsible from './Collapsible';
 
 class FactChecks extends React.Component {
 
@@ -14,7 +15,7 @@ class FactChecks extends React.Component {
     }
   }
 
-  componentDidMount(){
+  ajaxCall(){
     var url = 'http://localhost:5000/api/articles/' + parseInt(this.props.location.query.article_id)
     var request = new XMLHttpRequest()
     request.open('GET', url)
@@ -29,18 +30,21 @@ class FactChecks extends React.Component {
             console.log(data)
             var articleData = {title: data.title, url: data.url, id:data.id, embeded: data.embeded, user: data.user_id}
             var factCheckData = data.fact_checks
-            this.setState( { article: articleData});
-            this.setState({ factChecks: factCheckData });
+            this.setState({ 
+              article: articleData,
+              factChecks: factCheckData
+            });
            } else{
             console.log("Uh oh you're not logged in!")
             browserHistory.goBack()
            }
         }
         request.send(null)
+        console.log("hello", this.state.factChecks)
   }
 
-  componentDidUpdate(prevProps, prevState){
-    
+  componentDidMount(){
+    this.ajaxCall()
   }
 
   render(){
@@ -51,8 +55,14 @@ class FactChecks extends React.Component {
     }
     return(
       <div className='article-container'>
+      <nav className='navbar'>
+        <Link to='/' className='title'>The Critical Thinker</Link>
+        <Link to='/articles' className='articles'>Articles</Link>
+      </nav>
         <ArticleListing {...this.state.article}key={this.state.article.id}/>
-        <FactCheckForm {...this.state.article} key={this.state.article.user}/>
+        <Collapsible trigger="Add a Fact Check" className="collapse">
+        <FactCheckForm {...this.state.article} onFormSubmit={this.ajaxCall.bind(this)} key={this.state.article.user}/>
+        </Collapsible>
       <div className='fact-checks-list'>
         { this.state.factChecks.map((factCheck) => (
         <FactCheckListing { ...factCheck } key={factCheck.id}/>

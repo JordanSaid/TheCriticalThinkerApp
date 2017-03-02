@@ -26,7 +26,7 @@ class ArticleForm extends React.Component {
     request.onload = () => {
       if (request.status === 201) {
         const article = JSON.parse(request.responseText);
-
+        this.props.onFormSubmit()
       } 
     }
     const articleData = {
@@ -51,12 +51,16 @@ class ArticleForm extends React.Component {
 
   render(){
     return(
-    <form onSubmit={this.addArticle.bind(this)} className='add-article-form'>
+      <div>
+      <div id="article-form" class="collapse">
+      <form onSubmit={this.addArticle.bind(this)} className='add-article-form'>
       <input type="text" onChange={this.handleOnChangeTitle.bind(this)} placeholder="The Article Title" />
-      <input type="text" onChange={this.handleOnChangeUrl.bind(this)} placeholder="The Article Url" />
-      <input type="text" onChange={this.handleOnChangeEmbeded.bind(this)} placeholder="The embeded link if video" />
+      <input type="textarea" cols="50" rows="5" onChange={this.handleOnChangeUrl.bind(this)} placeholder="The Article Url" />
+      <input type="textarea" cols="50" rows="5" onChange={this.handleOnChangeEmbeded.bind(this)} placeholder="The embeded link if video" />
       <button onClick={this.addArticle.bind(this)}> Add Article </button>
       </form>
+      </div>
+      </div>
       )
     }
   }

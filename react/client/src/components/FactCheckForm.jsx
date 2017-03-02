@@ -29,7 +29,7 @@ class FactCheckForm extends React.Component {
     request.onload = () => {
       if (request.status === 201) {
         const factCheck = JSON.parse(request.responseText);
-
+        this.props.onFormSubmit()
       } else {
         console.log(factCheckData)
       }
@@ -61,7 +61,7 @@ class FactCheckForm extends React.Component {
 
   render(){
     return(
-    <form onSubmit={this.addFactCheck.bind(this)} className='add-fact-check-form'>
+    <form onSubmit={this.addFactCheck.bind(this)} className='add-fact-check-form' id="fcform">
       <select id="category-dropdown" onChange={this.handleOnChangeCategory.bind(this)} value={this.state.value}>
         <option>Choose Fact Check Category</option>
         <option value="False">False</option>
@@ -69,9 +69,9 @@ class FactCheckForm extends React.Component {
         <option value="Needs More Context">Needs More Context</option>
         <option value="Slight Innacuracy">Slight Innacuracy</option>
       </select>
-      <input type="text" onChange={this.handleOnChangeClaim.bind(this)} placeholder="The claim you want to dispute" />
-      <input type="text" onChange={this.handleOnChangeEvidence.bind(this)} placeholder="Your evidence for this" />
-      <input type="text" onChange={this.handleOnChangeSources.bind(this)} placeholder="The link to a source that backs your claim" />
+      <textarea form="fcform" cols="50" rows="5" onChange={this.handleOnChangeClaim.bind(this)} placeholder="The claim you want to dispute" />
+      <textarea form="fcform" cols="50" rows="5" onChange={this.handleOnChangeEvidence.bind(this)} placeholder="Your rebuttal with evidence" />
+      <textarea form="fcform" cols="50" rows="5" onChange={this.handleOnChangeSources.bind(this)} placeholder="The link to a source that backs your claim" />
       <button onClick={this.addFactCheck.bind(this)}> Add Fact Check </button>
       </form>
       )
