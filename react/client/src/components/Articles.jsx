@@ -49,6 +49,7 @@ class Articles extends React.Component {
       <div className="articles-list">
         <nav className='navbar'>
           <Link to='/' className='title'>The Critical Thinker</Link>
+          <Link to='/articles' className='articles'>Articles</Link>
           <input className='search-box' type='text' placeholder='Search Articles...' value={this.state.searchQuery} onChange={this.doSearch} />
         </nav>
         <Collapsible trigger="Add an Article" className="collapse">
