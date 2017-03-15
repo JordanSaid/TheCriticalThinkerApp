@@ -47093,3 +47093,874 @@ Processing by ArticlesController#show as JSON
 Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/api/articles/44" for ::1 at 2017-03-13 16:03:32 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.2ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 13ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-03-13 16:03:37 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-13 16:03:39 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.1ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-13 16:05:37 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.1ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-13 16:05:44 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.2ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 10ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-13 16:06:41 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.1ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-03-13 16:06:44 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-13 16:06:53 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.1ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-13 16:07:01 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.2ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 10ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-03-13 16:07:02 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-13 16:07:04 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.1ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-13 16:07:18 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.1ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-03-13 16:07:22 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-13 16:07:26 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.1ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-13 16:09:09 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.2ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-03-13 16:09:16 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-13 16:09:28 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.1ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-13 16:09:56 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.2ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 31ms (Views: 20.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-13 16:10:02 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.2ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 13ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-03-13 16:10:38 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-13 16:10:40 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.1ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-03-13 16:10:55 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/articles/45" for ::1 at 2017-03-14 16:08:33 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"45", "article"=>{}}
+  [1m[36mArticle Load (2.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.3ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 45]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+Completed 200 OK in 63ms (Views: 7.0ms | ActiveRecord: 2.8ms)
+
+
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+ (called from <top (required)> at /Users/jay/Desktop/cx3_8/CT/CT_API/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/jay/Desktop/cx3_8/CT/CT_API/app/models/application_record.rb:1)
+Started GET "/api/articles/45" for ::1 at 2017-03-15 15:57:15 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: skip_before_filter is deprecated and will be removed in Rails 5.1. Use skip_before_action instead. (called from <class:ApplicationController> at /Users/jay/Desktop/cx3_8/CT/CT_API/app/controllers/application_controller.rb:3)
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"45", "article"=>{}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.6ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 45]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+Completed 200 OK in 140ms (Views: 1.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-03-15 15:57:21 +0000
+Processing by ArticlesController#index as JSON
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-03-15 15:57:54 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/articles/45" for ::1 at 2017-03-15 15:58:00 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"45", "article"=>{}}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.1ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 45]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+Completed 200 OK in 14ms (Views: 1.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-03-15 15:58:01 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-15 16:21:33 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.5ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 16ms (Views: 3.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-03-15 16:21:38 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-03-15 16:42:44 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-15 16:42:51 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (1.1ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 10ms (Views: 0.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-15 16:43:28 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.2ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 10ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-15 16:43:38 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.1ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-15 16:43:52 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.1ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-15 16:44:39 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.2ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-15 16:44:47 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.3ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-15 16:45:08 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.2ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 1.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-03-15 16:45:13 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-15 16:45:14 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.9ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 0.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-15 16:45:29 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.1ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+ (called from <top (required)> at /Users/jay/Desktop/cx3_8/CT/CT_API/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/jay/Desktop/cx3_8/CT/CT_API/app/models/application_record.rb:1)
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+ (called from <top (required)> at /Users/jay/Desktop/cx3_8/CT/CT_API/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/jay/Desktop/cx3_8/CT/CT_API/app/models/application_record.rb:1)
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserNameToUser (20170315165906)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170315165906"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_articles_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_articles_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_fact_checks_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_fact_checks_on_article_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_fact_checks_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_fact_checks_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+ (called from <top (required)> at /Users/jay/Desktop/cx3_8/CT/CT_API/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/jay/Desktop/cx3_8/CT/CT_API/app/models/application_record.rb:1)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUsernameToUsers (20170315170047)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170315170047"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_articles_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_articles_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_fact_checks_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_fact_checks_on_article_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_fact_checks_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_fact_checks_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/api/articles" for ::1 at 2017-03-15 17:02:43 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: skip_before_filter is deprecated and will be removed in Rails 5.1. Use skip_before_action instead. (called from <class:ApplicationController> at /Users/jay/Desktop/cx3_8/CT/CT_API/app/controllers/application_controller.rb:3)
+Processing by ArticlesController#index as JSON
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 30ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/users" for ::1 at 2017-03-15 17:02:47 +0000
+Processing by UsersController#index as JSON
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users.json" for ::1 at 2017-03-15 17:02:51 +0000
+Processing by UsersController#index as JSON
+  Parameters: {"user"=>{}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.8ms)
+
+
+Started POST "/users/sign_in.json" for ::1 at 2017-03-15 17:03:05 +0000
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"j@email.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"j@email.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "j@email.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", 2017-03-15 17:03:06 UTC], ["sign_in_count", 2], ["updated_at", 2017-03-15 17:03:06 UTC], ["id", 39]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 201ms (Views: 0.6ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/users" for ::1 at 2017-03-15 17:03:09 +0000
+Processing by UsersController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = ?[0m  [["user_id", 39]]
+  [1m[36mFactCheck Load (0.2ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."user_id" = ?[0m  [["user_id", 39]]
+Completed 200 OK in 30ms (Views: 0.8ms | ActiveRecord: 1.2ms)
+
+
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+ (called from <top (required)> at /Users/jay/Desktop/cx3_8/CT/CT_API/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/jay/Desktop/cx3_8/CT/CT_API/app/models/application_record.rb:1)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddusernameToUsers (20170315170455)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170315170455"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_articles_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_articles_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_fact_checks_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_fact_checks_on_article_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_fact_checks_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_fact_checks_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+ (called from <top (required)> at /Users/jay/Desktop/cx3_8/CT/CT_API/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/jay/Desktop/cx3_8/CT/CT_API/app/models/application_record.rb:1)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUsernameToUser (20170315170919)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "users" ADD "username" varchar[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170315170919"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_articles_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_articles_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_fact_checks_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_fact_checks_on_article_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_fact_checks_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_fact_checks_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+ (called from <top (required)> at /Users/jay/Desktop/cx3_8/CT/CT_API/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/jay/Desktop/cx3_8/CT/CT_API/app/models/application_record.rb:1)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/users.json" for ::1 at 2017-03-15 17:10:31 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: skip_before_filter is deprecated and will be removed in Rails 5.1. Use skip_before_action instead. (called from <class:ApplicationController> at /Users/jay/Desktop/cx3_8/CT/CT_API/app/controllers/application_controller.rb:3)
+Processing by UsersController#index as JSON
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = ?[0m  [["user_id", 39]]
+  [1m[36mFactCheck Load (0.1ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."user_id" = ?[0m  [["user_id", 39]]
+Completed 200 OK in 58ms (Views: 0.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-03-15 17:10:33 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-15 17:14:15 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.2ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 12ms (Views: 1.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-15 17:14:19 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.4ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 12ms (Views: 0.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/users" for ::1 at 2017-03-15 17:14:34 +0000
+Processing by UsersController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = ?[0m  [["user_id", 39]]
+  [1m[36mFactCheck Load (0.1ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."user_id" = ?[0m  [["user_id", 39]]
+Completed 200 OK in 8ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+ (called from <top (required)> at /Users/jay/Desktop/cx3_8/CT/CT_API/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/jay/Desktop/cx3_8/CT/CT_API/app/models/application_record.rb:1)
+  [1m[36mActiveRecord::SchemaMigration Load (13.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/api/articles/44" for ::1 at 2017-03-15 17:15:01 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (1.0ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 0.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-03-15 17:15:04 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/articles/44" for ::1 at 2017-03-15 17:15:07 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"44", "article"=>{}}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.1ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 44]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/users" for ::1 at 2017-03-15 17:15:11 +0000
+Processing by UsersController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = ?[0m  [["user_id", 39]]
+  [1m[36mFactCheck Load (0.1ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."user_id" = ?[0m  [["user_id", 39]]
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users" for ::1 at 2017-03-15 17:15:13 +0000
+Processing by UsersController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = ?[0m  [["user_id", 39]]
+  [1m[36mFactCheck Load (0.1ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."user_id" = ?[0m  [["user_id", 39]]
+Completed 200 OK in 8ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users" for ::1 at 2017-03-15 17:15:15 +0000
+Processing by UsersController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = ?[0m  [["user_id", 39]]
+  [1m[36mFactCheck Load (0.2ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."user_id" = ?[0m  [["user_id", 39]]
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users" for ::1 at 2017-03-15 17:16:02 +0000
+Processing by UsersController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = ?[0m  [["user_id", 39]]
+  [1m[36mFactCheck Load (0.1ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."user_id" = ?[0m  [["user_id", 39]]
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users" for ::1 at 2017-03-15 17:16:05 +0000
+Processing by UsersController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = ?[0m  [["user_id", 39]]
+  [1m[36mFactCheck Load (0.1ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."user_id" = ?[0m  [["user_id", 39]]
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+ (called from <top (required)> at /Users/jay/Desktop/cx3_8/CT/CT_API/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/jay/Desktop/cx3_8/CT/CT_API/app/models/application_record.rb:1)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 39]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 40]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 44]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 45]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 46]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mFactCheck Load (0.2ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "fact_checks" WHERE "fact_checks"."id" = ?[0m  [["id", 37]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "fact_checks" WHERE "fact_checks"."id" = ?[0m  [["id", 38]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "fact_checks" WHERE "fact_checks"."id" = ?[0m  [["id", 39]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "j@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "username") VALUES (?, ?, ?, ?, ?)[0m  [["email", "j@email.com"], ["encrypted_password", "$2a$11$hu5OPf0wJHB00SWx6LVxd.jr5Nlq10r9oOUjOCWckyL93Jmx4nd/e"], ["created_at", 2017-03-15 17:18:32 UTC], ["updated_at", 2017-03-15 17:18:32 UTC], ["username", "Jordan"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "k@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "username") VALUES (?, ?, ?, ?, ?)[0m  [["email", "k@email.com"], ["encrypted_password", "$2a$11$55lVnAdCTed0QgOyYoMXgOzMEPGEX/wqyBfQnJV1NoOx5O6fqUvsi"], ["created_at", 2017-03-15 17:18:33 UTC], ["updated_at", 2017-03-15 17:18:33 UTC], ["username", "Kay"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("url", "user_id", "created_at", "updated_at", "title") VALUES (?, ?, ?, ?, ?)[0m  [["url", "http://www.tunezmp3.com/china-now-producing-corned-beef-dead-bodies-sending-africa/"], ["user_id", 41], ["created_at", 2017-03-15 17:18:33 UTC], ["updated_at", 2017-03-15 17:18:33 UTC], ["title", "China Sells Corned Beef Made from Dead Bodies To Africa"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "fact_checks" ("claim", "evidence", "sources", "user_id", "created_at", "updated_at", "category", "article_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["claim", "The picture shows the shop in china that sells human bodies as meat."], ["evidence", "These photographs come from a number of sources, but at least one of them was taken from a 2012 marketing stunt for the video game Resident Evil 6, in which a butcher shop selling fake “human meat” was set up at London’s Smithfield Market"], ["sources", "http://kotaku.com/5947404/resident-evil-6-meat-stunt-might-make-you-lose-your-lunch"], ["user_id", 41], ["created_at", 2017-03-15 17:18:33 UTC], ["updated_at", 2017-03-15 17:18:33 UTC], ["category", "False"], ["article_id", 47]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("url", "user_id", "created_at", "updated_at", "title", "embeded") VALUES (?, ?, ?, ?, ?, ?)[0m  [["url", "https://www.youtube.com/watch?v=xHbSbtzPXtU"], ["user_id", 42], ["created_at", 2017-03-15 17:18:33 UTC], ["updated_at", 2017-03-15 17:18:33 UTC], ["title", "BLM Toronto, Justin Trudeau is a white supremacist"], ["embeded", "https://www.youtube.com/embed/xHbSbtzPXtU"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "fact_checks" ("claim", "evidence", "sources", "user_id", "created_at", "updated_at", "category", "article_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["claim", "When Justin Trudeau says that (he will accept those not allowed in US into Canada) ... he is a white supremacist terrorist."], ["evidence", "There is no evidence to support the claim that Trudeau is a white supremacist, in fact his cabinet has been celebrated for it's diversity. On the 31 in his cabinet, half are female, 3 are Sikh's of Indian descent, Maryam Monsef is an immigrant from Afganistan and two are Aboriginal"], ["sources", "https://www.theguardian.com/world/2015/nov/04/canada-cabinet-gender-diversity-justin-trudeau"], ["user_id", 42], ["created_at", 2017-03-15 17:18:33 UTC], ["updated_at", 2017-03-15 17:18:33 UTC], ["category", "False"], ["article_id", 48]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/users" for ::1 at 2017-03-15 17:18:38 +0000
+Processing by UsersController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users.json" for ::1 at 2017-03-15 17:18:42 +0000
+Processing by UsersController#index as JSON
+  Parameters: {"user"=>{}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in.json" for ::1 at 2017-03-15 17:18:51 +0000
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"j@email.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"j@email.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "j@email.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", 2017-03-15 17:18:51 UTC], ["last_sign_in_at", 2017-03-15 17:18:51 UTC], ["current_sign_in_ip", "::1"], ["last_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", 2017-03-15 17:18:51 UTC], ["id", 41]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 159ms (Views: 0.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/api/articles" for ::1 at 2017-03-15 17:18:52 +0000
+Processing by ArticlesController#index as JSON
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/articles/47" for ::1 at 2017-03-15 17:18:53 +0000
+Processing by ArticlesController#show as JSON
+  Parameters: {"id"=>"47", "article"=>{}}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 47], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  [1m[36mFactCheck Load (0.6ms)[0m  [1m[34mSELECT "fact_checks".* FROM "fact_checks" WHERE "fact_checks"."article_id" = ?[0m  [["article_id", 47]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+Completed 200 OK in 10ms (Views: 0.9ms | ActiveRecord: 0.9ms)
+
+

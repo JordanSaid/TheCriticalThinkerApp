@@ -5,13 +5,15 @@ FactCheck.destroy_all
 user_one = User.create({
   email: 'j@email.com',
   password: 'password',
-  password_confirmation: 'password'
+  password_confirmation: 'password',
+  username: 'Jordan'
   })
 
 user_two = User.create({
   email: 'k@email.com',
   password: 'password',
-  password_confirmation: 'password'
+  password_confirmation: 'password',
+  username: 'Kay'
   })
 
 a1 = user_one.articles.create({

@@ -3,11 +3,15 @@ body{
   margin: 0;
 }
 
-.articles-container {
+.articles-container, .fact-check-container, .fact-check-listing, .article-listing{
   display: flex-row;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.fact-check-listing-details {
+  width: 800px;
 }
 
 .navbar{
@@ -26,6 +30,9 @@ body{
 .collapse{
   background-color: tomato;
   width: 150px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 link, a{
@@ -35,3 +42,4 @@ link, a{
 textarea, input{
   margin: 8px;
 }
+

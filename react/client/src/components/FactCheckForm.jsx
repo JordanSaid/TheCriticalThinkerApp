@@ -1,8 +1,5 @@
 import React from 'react'
 import { Link, browserHistory } from 'react-router'
-import FactCheckListing from './FactCheckListing'
-import ArticleListing from './ArticleListing'
-import FactChecks from './FactChecks'
 
 class FactCheckForm extends React.Component {
 

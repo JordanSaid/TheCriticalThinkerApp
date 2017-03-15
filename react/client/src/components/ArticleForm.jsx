@@ -1,7 +1,5 @@
 import React from 'react'
 import { Link, browserHistory } from 'react-router'
-import ArticleListing from './ArticleListing'
-import Articles from './Articles'
 
 class ArticleForm extends React.Component {
 

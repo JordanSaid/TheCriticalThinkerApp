@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Main from './components/Main'
 import Home from './components/Home'
 import Articles from './components/Articles'
 import FactChecks from './components/FactChecks'
-import Main from './components/Main'
 import {Router, Route, IndexRoute, hashHistory} from 'react-router'
 
 class App extends React.Component{
