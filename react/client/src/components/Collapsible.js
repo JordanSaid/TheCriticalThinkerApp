@@ -228,7 +228,7 @@ var Collapsible = React.createClass({
 
     return(
       <div className={this.props.classParentString + ' ' + (this.state.isClosed ? this.props.className : this.props.openedClassName)}>
-        <span className={triggerClassName.trim()} onClick={this.handleTriggerClick}>{trigger}</span>
+        <span id="span" className={triggerClassName.trim()} onClick={this.handleTriggerClick}>{trigger}</span>
         <div className={this.props.classParentString + "__contentOuter" + ' ' + this.props.contentOuterClassName } ref="outer" style={dropdownStyle}>
           <div className={this.props.classParentString + "__contentInner" + ' ' + this.props.contentInnerClassName} ref="inner">
               {children}

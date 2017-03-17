@@ -13,7 +13,6 @@ const ArticleListing = function (props) {
 
     return (
       <div className='article-listing'>
-        <div className='article-listing-details'>
           <h3 className='article-listing-title'>{props.title}</h3>
           <iframe className='article-listing-iframe'src={link} scrolling="yes" width="700" height="500"></iframe>
           <p className='article-listing-url'><a href={props.url}>Go To Link </a>
@@ -25,7 +24,6 @@ const ArticleListing = function (props) {
             }
           }> Fact Checks</Link> 
           </p>
-        </div>
       </div>
   )
 

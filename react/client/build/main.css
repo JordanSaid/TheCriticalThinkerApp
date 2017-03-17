@@ -8,10 +8,8 @@ body{
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-
-.fact-check-listing-details {
-  width: 800px;
+  width:800px;
+  margin:auto;
 }
 
 .navbar{
@@ -22,17 +20,32 @@ body{
   text-decoration: none;
 }
 
-.add-article-form, .add-fact-check-form{
+#fcform, #article-form {
   display:flex;
   flex-direction:column;
-}
-
-.collapse{
-  background-color: tomato;
-  width: 150px;
-  align-items: center;
   justify-content: center;
   text-align: center;
+  width:600px;
+  margin:auto;
+}
+
+#span {
+  border:solid;
+  text-align: center;
+  margin:auto;
+  float: none;
+  display:block;
+  width:200px;
+  font-size:22px;
+}
+
+select {
+  width:200px;
+}
+
+button{
+  width:100px;
+  margin:auto;
 }
 
 link, a{

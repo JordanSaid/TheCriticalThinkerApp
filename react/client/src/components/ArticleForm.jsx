@@ -49,16 +49,12 @@ class ArticleForm extends React.Component {
 
   render(){
     return(
-      <div>
-      <div id="article-form" class="collapse">
-      <form onSubmit={this.addArticle.bind(this)} className='add-article-form'>
+      <form onSubmit={this.addArticle.bind(this)} className='add-article-form' id="article-form">
       <input type="text" onChange={this.handleOnChangeTitle.bind(this)} placeholder="The Article Title" />
       <input type="textarea" cols="50" rows="5" onChange={this.handleOnChangeUrl.bind(this)} placeholder="The Article Url" />
       <input type="textarea" cols="50" rows="5" onChange={this.handleOnChangeEmbeded.bind(this)} placeholder="The embeded link if video" />
       <button onClick={this.addArticle.bind(this)}> Add Article </button>
       </form>
-      </div>
-      </div>
       )
     }
   }
