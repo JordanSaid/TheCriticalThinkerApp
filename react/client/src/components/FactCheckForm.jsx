@@ -58,7 +58,7 @@ class FactCheckForm extends React.Component {
 
   render(){
     return(
-    <form onSubmit={this.addFactCheck.bind(this)} className='add-fact-check-form' id="fcform">
+    <form onSubmit={this.addFactCheck.bind(this)} id="fcform">
       <select id="category-dropdown" onChange={this.handleOnChangeCategory.bind(this)} value={this.state.value}>
         <option>Choose Fact Check Category</option>
         <option value="False">False</option>

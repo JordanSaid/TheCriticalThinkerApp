@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link, browserHistory } from 'react-router'
-import FactCheckListing from './FactCheckListing'
-import ArticleListing from './ArticleListing'
-import FactCheckForm from './FactCheckForm'
-import Collapsible from './Collapsible';
-import Nav from './Nav';
+import FactCheckListing from '../components/FactCheckListing'
+import ArticleListing from '../components/ArticleListing'
+import FactCheckForm from '../components/FactCheckForm'
+import Collapsible from '../components/Collapsible';
+import Nav from '../components/Nav';
 
 class FactChecks extends React.Component {
 
@@ -56,7 +56,7 @@ class FactChecks extends React.Component {
     }
     return(
       <div className='article-container'>
-      <Nav />
+        <Nav />
         <ArticleListing {...this.state.article}key={this.state.article.id}/>
         <Collapsible trigger="Add a Fact Check" className="collapse">
         <FactCheckForm {...this.state.article} onFormSubmit={this.ajaxCall.bind(this)} key={this.state.article.user}/>

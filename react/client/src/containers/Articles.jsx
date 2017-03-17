@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link, browserHistory } from 'react-router'
-import ArticleListing from './ArticleListing'
-import ArticleForm from './ArticleForm'
-import Collapsible from './Collapsible'
-import Nav from './Nav';
+import ArticleListing from '../components/ArticleListing'
+import ArticleForm from '../components/ArticleForm'
+import Collapsible from '../components/Collapsible';
+import Nav from '../components/Nav';
 
 class Articles extends React.Component {
 

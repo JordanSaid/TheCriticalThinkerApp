@@ -18,7 +18,4 @@ const Nav = function (props) {
 
 }
 
-const { string, text } = React.PropTypes
-
-
 export default Nav

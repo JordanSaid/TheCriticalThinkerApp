@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 import LoginBox from '../auth/LoginBox'
-import Nav from './Nav';
+import Nav from '../components/Nav';
 
 const Login = () => (
   <div className="login-page">

@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Main from './components/Main'
-import Home from './components/Home'
-import Articles from './components/Articles'
-import FactChecks from './components/FactChecks'
-import Login from './components/Login'
+import Main from './containers/Main'
+import Home from './containers/Home'
+import Articles from './containers/Articles'
+import FactChecks from './containers/FactChecks'
+import Login from './containers/Login'
 import {Router, Route, IndexRoute, hashHistory} from 'react-router'
 
 class App extends React.Component{

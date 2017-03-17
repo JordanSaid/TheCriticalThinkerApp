@@ -14,10 +14,9 @@ body{
 
 .navbar{
   background-color: #f1f1f1;
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
+  /*position: fixed;*/
+  width:100%;
+  display: flex;
 }
 
 #fcform, #article-form {
@@ -39,6 +38,14 @@ body{
   font-size:22px;
 }
 
+.float-left {
+  flex:1;
+}
+.float-right {
+  flex:1;
+  text-align:right;
+}
+
 select {
   width:200px;
 }
@@ -48,9 +55,17 @@ button{
   margin:auto;
 }
 
-link, a{
+nav link, nav a{
+  padding: 8px 16px;
+  color: black;
+  text-decoration: none;
+  font-size:22px;
+}
+
+a {
   padding: 8px 16px;
 }
+
 
 textarea, input{
   margin: 8px;
