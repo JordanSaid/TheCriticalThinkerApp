@@ -4,6 +4,7 @@ import FactCheckListing from './FactCheckListing'
 import ArticleListing from './ArticleListing'
 import FactCheckForm from './FactCheckForm'
 import Collapsible from './Collapsible';
+import Nav from './Nav';
 
 class FactChecks extends React.Component {
 
@@ -55,10 +56,7 @@ class FactChecks extends React.Component {
     }
     return(
       <div className='article-container'>
-      <nav className='navbar'>
-        <Link to='/' className='title'>The Critical Thinker</Link>
-        <Link to='/articles' className='articles'>Articles</Link>
-      </nav>
+      <Nav />
         <ArticleListing {...this.state.article}key={this.state.article.id}/>
         <Collapsible trigger="Add a Fact Check" className="collapse">
         <FactCheckForm {...this.state.article} onFormSubmit={this.ajaxCall.bind(this)} key={this.state.article.user}/>
